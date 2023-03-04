@@ -1,7 +1,7 @@
 {
   "name": "react-portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "A portfolio made with React and Bootstrap",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,8 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/TheRealPlanZ/react-portfolio.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Zack Levin",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/TheRealPlanZ/react-portfolio/issues"
   },
