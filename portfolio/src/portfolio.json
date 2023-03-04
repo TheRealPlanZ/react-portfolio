@@ -1,0 +1,10 @@
+[
+    {
+    "id": 1,
+    "name": "Hello Wordle",
+    "image": "./assets/console.log__hello_wordl___480.png",
+    "github": "https://github.com/uabcHelloWordl/hello-wordl-game",
+    "deploy": "https://hello-wordl.herokuapp.com/",
+    "topics": "JS, HTML, CSS, Node.js, Express.js, MySQL"
+    }
+]

@@ -1,5 +1,5 @@
 import React from 'react';
-import Projects from './components/Project';
+import Projects from './Project';
 import portfilio from '../portfolio.json';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
