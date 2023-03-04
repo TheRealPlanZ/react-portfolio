@@ -1,7 +1,7 @@
 [
     {
     "id": 1,
-    "name": "Hello Wordle",
+    "name": "Hello Wordl",
     "image": "./assets/console.log__hello_wordl___480.png",
     "github": "https://github.com/uabcHelloWordl/hello-wordl-game",
     "deploy": "https://hello-wordl.herokuapp.com/",
