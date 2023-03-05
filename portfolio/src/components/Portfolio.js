@@ -1,14 +1,15 @@
 import React from 'react';
-import Projects from './Project';
-import portfilio from '../portfolio.json';
+import { Row } from 'react-bootstrap';
+import Projects from './Projects';
+import portfolio from '../portfolio.json';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Portfolio() {
     return (
-        <div>
-            <h1>Portfolio</h1>
-            <div class="row">
-                {portfilio.map((project) => (
+        <div class="container my-5">
+            <h1 class="my-5">Portfolio</h1>
+            <Row class="row-cols-md-2 g-4 pb-5">
+                {portfolio.map((project) => (
                     <Projects
                         key={project.id}
                         name={project.name}
@@ -18,9 +19,10 @@ function Portfolio() {
                         repo={project.repo}
                     />
                 ))}
-            </div>
+            </Row>
         </div>
     );
 }
 
 export default Portfolio;
+

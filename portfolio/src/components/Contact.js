@@ -37,24 +37,40 @@ function ContactForm() {
     }
 
     return (
-        <section className="contact-form">
-            <h2>Contact Me</h2>
-            <form onSubmit={handleSubmit}>
-                <div className="form-group">
-                    <label htmlFor="name">Name</label>
-                    <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
-                   
-                    <label htmlFor="email">Email</label>
-                    <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
-                   
-                    <label htmlFor="message">Message</label>
-                    <textarea name="message" defaultValue={message} onBlur={handleChange} />
+      <section class="bg-dark text-light py-5" id="contact">
+          <div class="row mb-5">
+              <div class="col-lg-12 col-md-12">
+                  <h1 class="heading text-center">Contact Me</h1>
+                  <hr class="divider-sm bg-primary" />
+                  <p class="lead text-muted text-center">Please fill out the form below to send me a message!</p>
+              </div>
+          </div>
 
-                    <button type="submit">Submit</button>
+          <div class="row justify-content-center">
+              <div class="col-lg-8 col-md-10 col-sm-12">
+                  <form onSubmit={handleSubmit}>
+                      <div class="form-group">
+                          <label htmlFor="name">Name</label>
+                          <input type="text" class="form-control" name="name" defaultValue={name} onBlur={handleChange} />
 
-                </div>
-            </form>
-        </section>
+                          <label htmlFor="email">Email Address</label>
+                          <input type="email" class="form-control" name="email" defaultValue={email} onBlur={handleChange} />
+
+                          <label htmlFor="message">Message</label>
+                          <textarea rows="5" class="form-control" name="message" defaultValue={message} onBlur={handleChange} />
+
+                          {errorMessage && (
+                              <div>
+                                  <p class="error-text">{errorMessage}</p>
+                              </div>
+                          )}
+
+                          <button type="submit" class="btn btn-lg btn-light mt-3">Submit</button>
+                      </div>
+                  </form>
+              </div>  
+          </div>
+      </section>
     );
 }
 
