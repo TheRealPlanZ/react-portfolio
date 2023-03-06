@@ -14,7 +14,7 @@ class Header extends React.Component {
                 <div>
                     <Navbar bg="dark" variant="dark" expand="lg">
                       <Container>
-                        <Navbar.Brand href="/">My Portfolio</Navbar.Brand>
+                        <Navbar.Brand href="/">Zack Levin</Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                           <Nav className="me-auto">
