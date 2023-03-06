@@ -5,17 +5,17 @@ function Projects(props) {
   return (
     <div className="container">
       <h1>Projects</h1>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <img src={props.image} alt={props.title} class="card-img-top"/>
-            <div class="card-body">
-              <h5 class="card-title">{props.title}</h5>
-              <p class="card-text">{props.description}</p>
+      <div className="row">
+        <div className="col-md-4">
+          <div className="card mb-4">
+            <img src={require(`../assets/${props.image}`)} alt={props.name} className="card-img-top" />
+            <div className="card-body">
+              <h5 className="card-title">{props.title}</h5>
+              <p className="card-text">{props.topics}</p>
             </div>
             <div className="card-footer">
-              <a href={props.deployed} target="_blank" rel="noopener noreferrer" class="btn btn-primary me-2">Deployed Link</a>
-              <a href={props.repo} target="_blank" rel="noopener noreferrer" class="btn btn-primary">Repository Link</a>
+              <a href={props.deploy} target="_blank" rel="noopener noreferrer" className="btn btn-primary me-2">Deployed Link</a>
+              <a href={props.github} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Repository Link</a>
             </div>
           </div>
         </div>
@@ -25,3 +25,5 @@ function Projects(props) {
 }
 
 export default Projects;
+
+

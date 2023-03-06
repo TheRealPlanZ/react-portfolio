@@ -6,17 +6,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Portfolio() {
     return (
-        <div class="container my-5">
-            <h1 class="my-5">Portfolio</h1>
-            <Row class="row-cols-md-2 g-4 pb-5">
+        <div className="container my-5">
+            <h1 className="my-5">Portfolio</h1>
+            <Row className="row-cols-md-2 g-4 pb-5">
                 {portfolio.map((project) => (
                     <Projects
                         key={project.id}
                         name={project.name}
                         image={project.image}
-                        description={project.description}
-                        deployed={project.deployed}
-                        repo={project.repo}
+                        topics={project.topics}
+                        deploy={project.deploy}
+                        github={project.github}
                     />
                 ))}
             </Row>
